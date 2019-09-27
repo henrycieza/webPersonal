@@ -1,7 +1,7 @@
 *{
     margin:0;
     padding:0;
-    font-size: 1em;
+    /*font-size: 1em;*/
     list-style: none;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
@@ -12,13 +12,14 @@ body{
    background-color: #eff1f2; 
    width: 80vw;
    margin:0 auto;
-   margin-top: 20px;
+  
 }
 .contenedor{
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 400px 300px 100px; 
 }
+
 .navlist ul {
     list-style-type: none;
     
@@ -30,41 +31,103 @@ body{
 /*------- HEAD-------------*/
 .header{
     background-color: #0d141c;
-    height: 400px;
+   
     /*------ DIVISION MENU------*/
     display: grid;
+/*    grid-template-columns: 30% 70%;*/
+    grid-template-columns: 20vw 60vw;
+    grid-template-rows:50px;
+    height: 50px;
+    justify-content: center;
+    position:fixed;
+    /*z-index: 100;*/
+    
+    
+}
+.logo{
+    display: grid;
     grid-template-columns: 30% 70%;
-    grid-template-rows: 10%;
+    align-content: center;
+    align-items: center;
+    
+    
 }
 .logo-personal{
     
-    height: 40px;
-    width: 40px;  
-    margin-left: 20px;  
+    height: 50px;
+    width: 50px;  
+    margin-left: 40px; 
+     
 }
-
+.logo .development{
+    color:#fbb844;
+    font-family: 'Abel', sans-serif;
+}
+foto{
+    position: relative;
+}
+.fotoPersonal{
+    width: 220px;
+    height: 250px;
+    margin-top: 140px;
+   
+   
+}
+.datosPersonales{
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+   
+   
+}
+.datosPersonales .personalName{
+    width: 40%;
+}
+.datosPersonales .personalName h1{
+    
+    color:#ffffff;
+    font-size: 2em;
+    margin: 10vw 0 0 10vw;
+}
+.datosPersonales .foto{
+    width: 60%;
+}
+.navlist{
+    
+    
+}
 .navlist ul {
     
-    height: 3vw;
+    /*height: 3vw;
     display: grid;
     grid-template-columns: repeat(4,25%);
-    align-content: center;
-    text-align: center;
-   
+    align-items: center;
+    justify-content: center;*/
+    
+   /* justify-content: space-around;*/
+    
+    
     
 }
 .navlist ul{
     
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-      
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
     
 }
 
 .navlist ul li {
-    display: inline;
+    cursor: pointer;
+    padding: 0.9rem;
+    flex: auto;
+    text-align: center;
   }
+ .navlist ul li:hover {
+    background-color: #fbb844;
+    color: white;
+ }   
 .navlist a{
 
     color: #ffffff; 
@@ -77,12 +140,12 @@ body{
 }
 /*------- CUERPO-------------*/
 .cuerpo{
-    background-color: #ffffff;
+  /*  background-color: #ffffff;*/
     height: 300px;
 }
 /*------- FOOTER-------------*/
 .footer{
-    background-color: yellow;
+    background-color:  #0d141c;;
     height: 100px;
 
 }
