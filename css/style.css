@@ -1,3 +1,5 @@
+@import url(/css/movil.css);
+
 *{
     margin:0;
     padding:0;
@@ -17,15 +19,21 @@ body{
 .contenedor{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 550px 70px; 
+    grid-template-rows: 50px 520px 70px;
 }
-
+.navlist{
+    display: flex;
+    flex-direction: column;
+}
 .navlist ul {
+    display: flex;
     list-style-type: none;
-    
     margin: 0;
     padding: 0;
 
+  }
+  #btn-menu{
+      display: none;
   }
 
 /*------- HEAD-------------*/
@@ -35,11 +43,11 @@ body{
     /*------ DIVISION MENU------*/
     display: grid;
 /*    grid-template-columns: 30% 70%;*/
-    grid-template-columns: 20vw 60vw;
+    grid-template-columns: 20vw 57vw 3vw;
     grid-template-rows:50px;
-    height: 50px;
     justify-content: center;
-    position:fixed;
+    /*height: 50px;*/
+    /*position:fixed;*/
     /*z-index: 100;*/
     
     
@@ -62,6 +70,12 @@ body{
 .logo .development{
     color:#fbb844;
     font-family: 'Abel', sans-serif;
+    font-size: 1.3em;
+    justify-self: start;
+}
+
+.icon-menu{
+    color:#ffffff;
 }
 /*----------- CUERPO ---------------*/
 .cuerpo{
@@ -76,7 +90,7 @@ body{
     grid-template-columns: 60% 40%;
     align-content: center;
     justify-items: center;
-    
+    margin-top: 100px;
  }
 
 .personalName .henryCieza{
@@ -86,6 +100,7 @@ body{
 }
 .personalName .webDeveloper{
     font-family: 'Big Shoulders Display', cursive;
+   
     color:#fbb844;
     text-align: end;
 }
@@ -102,31 +117,12 @@ body{
    
    
 }
-
-
-.navlist{
-    text-decoration: none
-    
-}
-.navlist ul {
-    
-    /*height: 3vw;
-    display: grid;
-    grid-template-columns: repeat(4,25%);
-    align-items: center;
-    justify-content: center;*/
-    
-   /* justify-content: space-around;*/
-    
-    
-    
-}
 .navlist ul{
-    
+   /* display: flex;*/
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex;
+    
     
 }
 
@@ -142,19 +138,16 @@ body{
  }   
 .navlist a{
 
-    color: #ffffff; 
+    /*color: #ffffff; */
+    color: red;
     text-transform: uppercase;
     text-decoration: none;
-    font-weight: bold;
+    
     
     
 
 }
 /*------- CUERPO-------------*/
-.cuerpo{
-  /*  background-color: #ffffff;*/
-    
-}
 
 /*-------- BOTONES ------------*/
 .enlace a{
@@ -166,14 +159,14 @@ body{
     background-color: #fbb844;
     border: 2px solid #ffffff;
     border-radius: 5px;
-    width: 150px;
+    width: 120px;
     margin-top: 350px;
     text-transform: uppercase;
     font-weight: bold;
     
 }
 .enlace{
-    margin-top: 120px;
+    margin-top: 20px;
     margin-right: 10px;
     text-align: center;
 }
