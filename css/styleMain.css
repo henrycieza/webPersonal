@@ -1,4 +1,4 @@
-@import url(/css/movilStyle.css);
+@import url(/css/movil.css);
 :root {
     --cabecera-bg-color:#0d141c;
     --logo-bg-color:#fbb844;
@@ -111,7 +111,16 @@ a .logo-personal{
 }
 .datosPersonales{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
+    height: 400px;
+}
+.datosPersonales .personalName{
+    text-align: center;
+    width: 50%;
+}
+.datosPersonales .foto{
+    width: 50%;
 }
 .fotoPersonal{
     width: 220px;
@@ -120,6 +129,12 @@ a .logo-personal{
     box-shadow: 18px 10px 13px -5px rgba(188,188,187,0.82);
    
    
+}
+.contenedor .enlace{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
 }
 /*************** PIE ********************/
 .pie{
@@ -149,40 +164,4 @@ a .logo-personal{
    border-radius: 10px;
    
 }
-/**********************MOVIL**********************/
 
-.navlistMovil{
-  height: 100%;
-  width: 0;
-  position: absolute;
-  z-index: 1;
-  background-color: #111;
-  /*overflow-x: hidden;*/
-  transform: translateX(-100%);
-  transition: all 0.3s;
-  padding-top: 60px;
-  -webkit-box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1);
-  -moz-box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1);
-  box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1);
-}
-.navlistMovil ul li{
-    background-color:var(--cabecera-bg-color);
-    width: 30vw;
-    font-size: 1em;
-}
-.navlistMovil ul li a{ 
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-    font-family: 'Open Sans', sans-serif;
-    text-transform: uppercase;
-    font-size: 1em;
-}
-.navlistMovil ul li a:hover{
-    
-        color: #fff;
-    
-}
