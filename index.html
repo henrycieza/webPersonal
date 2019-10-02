@@ -4,25 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HenryCieza</title>
-    <!--CSS-->
+    <!-----------------------CSS------------------------>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="fonts/style.css">
-    <!--FontsFamily-->
-    <link href="https://fonts.googleapis.com/css?family=Abel|Open+Sans&display=swap" rel="stylesheet">
-    <!--NOMBRE FONT STILE-->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:600i&display=swap" rel="stylesheet">
-    <!--webDevelopment-->
-    <link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Display:100,300&display=swap" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    
+      
+
+    <title>PersonalWeb Henry Cieza</title>
 </head>
 <body>
     <div class="contenedor">
-        <div class="header">
+        <div class="cabecera">
                 <div class="logo">
-                    <img class="logo-personal" src="img/logohc.png" alt=""/>
-                    <h1 class="development">Development</h1>
+                       <a href="index.html"><img class="logo-personal" src="img/logohc.png" alt=""/></a>
+                        <h1 class="development">Development</h1>
                 </div>
-                <div id="opcMenu" class="navlist enabled-menu">
+                <nav class="navlist">
+                        <ul>
+                            <li><a href="#">home</a></li>
+                            <li><a href="#">about me</a></li>
+                            <li><a href="#">blog</a></li>
+                            <li><a href="#">contact</a></li>
+                            
+                        </ul>
+                        
+                </nav>
+                <input type="checkbox" id="btn-menu">
+                    <label for="btn-menu" class="icon-menu"></label>
+                
+                
+                   <!-- <a href="#" class="btn-menu"></a><span class="icon-list2"></span>Menu</a>-->
+                    <!--menu movil-->
+                <nav id="menuMovil" class="navlistMovil">
                     <ul>
                         <li><a href="#">home</a></li>
                         <li><a href="#">about me</a></li>
@@ -30,33 +44,36 @@
                         <li><a href="#">contact</a></li>
                         
                     </ul>
-                </div>
-                <div class="menuDesplegable">
-                    <input type="checkbox" id="btn-menu">
-                    <label for="btn-menu" class="icon-menu"></label>
-                </div>
-        </div> 
-        <div class="cuerpo">       
-                <div class="datosPersonales">
+                    
+                </nav>
+        </div>   
+        <div class="cuerpo">
 
-                        <div class="personalName">
-                            <h2 class="imHC">I'm</h2>
-                            <h1 class="henryCieza">Henry Cieza</h1>
-                            <h2 class="webDeveloper">Web Developer</h2>
-                            
-                        </div>
-                        <div class="foto">
-                            <img class="fotoPersonal" src="/img/henry.jpg">
-                        </div>
-                </div>        
+            <div class="datosPersonales">
+
+                <div class="foto">
+                    <img class="fotoPersonal" src="/img/henry.jpg">
+                </div>
+                <div class="personalName">
+                    <h2 class="imHC">I'm</h2>
+                    <h1 class="henryCieza">Henry Cieza</h1>
+                    <h2 class="webDeveloper">Web Developer</h2>
+                </div> 
+
                 <div class="enlace">
                     <a class="contacto" href="#">contacto</a>
-                    <a class="donwload" href="/pdf/cv-henrycieza.pdf" download="henrycieza">download cv</a>
+                    <a class="donwload" href="#">download cv</a>
+                    
                 </div>
+                
+        </div>   
+
+
+
 
 
         </div>
-        <div class="footer">
+        <div class="pie">
             <div class="redesSociales">
                 <div class="rs" class="github">
                         <a href="https://github.com/"><img src="/img/github.png" alt="github"></a>
@@ -70,14 +87,10 @@
                 <div class="rs" class="instagram">
                         <a href="https://www.instagram.com/?hl=es"><img src="/img/instagram.png" alt="instagram"></a>
                 </div>
-               
-                
-                
                 
             </div>
-
         </div>
     </div>
-    <script type="text/javascript" src="/js/menuMovil.js"></script>
+    
 </body>
 </html>
