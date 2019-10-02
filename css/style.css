@@ -1,7 +1,15 @@
+@import url(/css/movilStyle.css);
+:root {
+    --cabecera-bg-color:#0d141c;
+    --logo-bg-color:#fbb844;
+    --cuerpo-bg-color:#ffffff;
+    --body-bg-color:#bcbcbb;
+    --texto-br-color:#ffffff;
+  }
 *{
     margin:0;
     padding:0;
-    /*font-size: 1em;*/
+    font-size: 1em;
     list-style: none;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
@@ -9,40 +17,25 @@
 }
 body{
   
-   background-color: #eff1f2; 
-   width: 80vw;
-   margin:0 auto;
-  
-}
+   background-color:var(--body-bg-color);
+    width: 80vw;
+    margin:0 auto;
+   
+ }
 .contenedor{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 550px 70px; 
+   /* grid-template-rows: 10vh 80vh 10vh;*/
+   grid-template-rows: 60px 520px 60px;
 }
-
-.navlist ul {
-    list-style-type: none;
-    
-    margin: 0;
-    padding: 0;
-
-  }
-
-/*------- HEAD-------------*/
-.header{
-    background-color: #0d141c;
-   
-    /*------ DIVISION MENU------*/
+/*************** CABECERA ********************/
+.cabecera{
+    background-color:var(--cabecera-bg-color);
     display: grid;
-/*    grid-template-columns: 30% 70%;*/
-    grid-template-columns: 20vw 60vw;
+    grid-template-columns: 30% 65% 5%;
     grid-template-rows:50px;
-    height: 50px;
     justify-content: center;
-    position:fixed;
-    /*z-index: 100;*/
-    
-    
+ 
 }
 .logo{
     display: grid;
@@ -52,47 +45,73 @@ body{
     justify-items: center;
     
 }
-.logo-personal{
-    
+a .logo-personal{
     height: 50px;
     width: 50px;  
-    margin: 0 20px 0 40px; 
+    margin: 10px 20px 0 40px; 
      
 }
 .logo .development{
-    color:#fbb844;
+    color:var(--logo-bg-color);
     font-family: 'Abel', sans-serif;
+    font-size: 1.3em;
+    justify-self: start;
 }
-/*----------- CUERPO ---------------*/
-.cuerpo{
-    display: grid;
-    grid-template-columns: 100%;
-    background-color: #ffffff;
+/*.navlist{
+    display: block;
+}*/
+/************* MENU  ******************/
+.cabecera label{
     
-    
- }
- .datosPersonales{
-    display: grid;
-    grid-template-columns: 60% 40%;
-    align-content: center;
+    background-color: var(--cuerpo-bg-color);
+    padding: 10px;
+    border-radius: 3%;
+    align-self: center;
+    justify-self: end;
+    color: var(--logo-bg-color);
+    margin-right: 10px;
+    cursor: pointer;
+}
+.cabecera input{
+    display: none;
+}
+.cabecera label{
+   /* display: none;*/
+}
+.navlist ul{
+    display:grid;
+    grid-template-columns: repeat(4, 25%);
     justify-items: center;
-    
+    align-items: center;
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
  }
-
-.personalName .henryCieza{
-    font-family: 'Raleway', sans-serif;
-    color: #000000;
-    font-size: 4em;
+ 
+ .navlist ul li {
+     cursor: pointer;
+     padding: 1.3rem;
+     flex: auto;
+     text-align: center;
+   }
+  .navlist ul li:hover {
+     background-color: #fbb844;
+     color: white;
+     width: 100%;
+  }   
+ .navlist a{
+     color:var(--texto-br-color);
+     text-transform: uppercase;
+     text-decoration: none;
+  
+ }
+/*************** CUERPO********************/
+.cuerpo{
+    background-color:var(--cuerpo-bg-color);
 }
-.personalName .webDeveloper{
-    font-family: 'Big Shoulders Display', cursive;
-    color:#fbb844;
-    text-align: end;
-}
-.personalName .imHC{
-    font-family: 'Big Shoulders Display', cursive;
-    font-size: 3em;
-    color:#bcbcbb;
+.datosPersonales{
+    display: flex;
+    flex-direction: column;
 }
 .fotoPersonal{
     width: 220px;
@@ -102,84 +121,9 @@ body{
    
    
 }
-
-
-.navlist{
-    text-decoration: none
-    
-}
-.navlist ul {
-    
-    /*height: 3vw;
-    display: grid;
-    grid-template-columns: repeat(4,25%);
-    align-items: center;
-    justify-content: center;*/
-    
-   /* justify-content: space-around;*/
-    
-    
-    
-}
-.navlist ul{
-    
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    
-}
-
-.navlist ul li {
-    cursor: pointer;
-    padding: 0.9rem;
-    flex: auto;
-    text-align: center;
-  }
- .navlist ul li:hover {
-    background-color: #fbb844;
-    color: white;
- }   
-.navlist a{
-
-    color: #ffffff; 
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: bold;
-    
-    
-
-}
-/*------- CUERPO-------------*/
-.cuerpo{
-  /*  background-color: #ffffff;*/
-    
-}
-
-/*-------- BOTONES ------------*/
-.enlace a{
-    padding: 15px;
-    text-decoration: none;
-    font-family: 'Abel', sans-serif;
-    font-size: 1.2em;
-    color: #ffffff;
-    background-color: #fbb844;
-    border: 2px solid #ffffff;
-    border-radius: 5px;
-    width: 150px;
-    margin-top: 350px;
-    text-transform: uppercase;
-    font-weight: bold;
-    
-}
-.enlace{
-    margin-top: 120px;
-    margin-right: 10px;
-    text-align: center;
-}
-/*------- FOOTER-------------*/
-.footer{
-    background-color:  #000000;
+/*************** PIE ********************/
+.pie{
+    background-color: var(--cabecera-bg-color);
     display: grid;
     justify-items: center;
 
@@ -198,10 +142,48 @@ body{
     width: 40px;
     margin: 10px;
 }
-.footer .redesSociales a img{
+.pie .redesSociales a img{
    height: 40px;
    width: 40px;
    border: 1px solid #fbb844;
    border-radius: 10px;
    
 }
+/**********************MOVIL**********************/
+
+.navlistMovil{
+  height: 100%;
+  width: 0;
+  position: absolute;
+  z-index: 1;
+  background-color: #111;
+  /*overflow-x: hidden;*/
+  transform: translateX(-100%);
+  transition: all 0.3s;
+  padding-top: 60px;
+  -webkit-box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1);
+  -moz-box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1);
+  box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1);
+}
+.navlistMovil ul li{
+    background-color:var(--cabecera-bg-color);
+    width: 30vw;
+    font-size: 1em;
+}
+.navlistMovil ul li a{ 
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+.navlistMovil ul li a:hover{
+    
+        color: #fff;
+    
+}
+
