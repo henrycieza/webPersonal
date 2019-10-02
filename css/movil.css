@@ -1,32 +1,60 @@
-@media (max-width: 699px)
+@media (max-width: 479px)
 {
+.header{
+        grid-template-columns: 30% 60% 10%;
+}
+.menuDesplegable label{
+    display: block;
+    position: absolute;
+    cursor: pointer;
+}
 
+.navlist {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    
+}
+
+.navlist ul{
+    align-items: center;
+    top: 50px;
+   
+}
+.navlist ul li{
+    color: black;
+    width: 100%;
+}
 .logo .development{
    display: none;
 }
-
 .menuDesplegable .iconmenu{
-    visibility: visible;
+   
     color:#ffffff;
     
 }
 
-.navlist{
-    position: absolute;
-}
 
-.navlist .ul{
+
+.navlist ul{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    border: 1px solid red;
     
-    display: grid;
 }
 
 .datosPersonales{
-    display: flex;
-    flex-direction: column;
+    align-content: flex-start;
 }
+
 .foto .fotoPersonal{
-    height: 150px;
-    width: 120px;
+    height: 100px;
+    width: 100px;
 }
 .henryCieza{
     font-family: 'Raleway', sans-serif;
@@ -46,3 +74,4 @@
 
 
 }
+

@@ -30,11 +30,8 @@ body{
     list-style-type: none;
     margin: 0;
     padding: 0;
-
-  }
-  #btn-menu{
-      display: none;
-  }
+ }
+ 
 
 /*------- HEAD-------------*/
 .header{
@@ -42,8 +39,7 @@ body{
    
     /*------ DIVISION MENU------*/
     display: grid;
-/*    grid-template-columns: 30% 70%;*/
-    grid-template-columns: 20vw 57vw 3vw;
+    grid-template-columns: 30% 65% 5%;
     grid-template-rows:50px;
     justify-content: center;
     /*height: 50px;*/
@@ -77,6 +73,11 @@ body{
 .icon-menu{
     color:#ffffff;
 }
+#btn-menu{
+    
+  display: none;
+    
+}
 /*----------- CUERPO ---------------*/
 .cuerpo{
     display: grid;
@@ -90,7 +91,7 @@ body{
     grid-template-columns: 60% 40%;
     align-content: center;
     justify-items: center;
-    margin-top: 100px;
+    
  }
 
 .personalName .henryCieza{
@@ -135,6 +136,7 @@ body{
  .navlist ul li:hover {
     background-color: #fbb844;
     color: white;
+    
  }   
 .navlist a{
 
