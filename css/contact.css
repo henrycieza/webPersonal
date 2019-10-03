@@ -1,0 +1,52 @@
+body{
+    font-family: monospace;
+}
+form{
+    width: 450px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+h2{
+    color:#ffffff;
+    text-align: center;
+    margin: 0;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+input, textarea{
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    border: none;
+}
+textarea{
+    min-height: 100px;
+    max-height: 150px;
+    min-width: 100%;
+    max-width: 100%;
+}
+#btnEnviar{
+    background-color: #31384A;
+    color:#ffffff;
+    padding: 20px;
+   
+    
+}
+#btnEnviar:hover{
+    cursor: pointer;
+}
+
+
+@media (max-width: 479px){
+
+form{
+    width: 90%;
+}
+
+}

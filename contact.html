@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-----------------------CSS------------------------>
     <link rel="stylesheet" type="text/css" href="css/styleMain.css">
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
     <link rel="stylesheet" type="text/css" href="fonts/style.css">
+    <script src="/js/valFrmContacto.js"></script>
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <title>PersonalWeb Henry Cieza</title>
 </head>
@@ -20,9 +22,9 @@
                 <nav class="navlist">
                         <ul>
                             <li><a href="#">home</a></li>
-                            <li><a href="aboutMe.html">about me</a></li>
+                            <li><a href="#">about me</a></li>
                             <li><a href="#">blog</a></li>
-                            <li><a href="contact.html">contact</a></li>
+                            <li><a href="#">contact</a></li>
                             
                         </ul>
                         
@@ -33,23 +35,19 @@
         </div>   
         <div class="cuerpo">
 
-            <div class="datosPersonales">
-                <div class="personalName">
-                    <h2 class="imHC">I'm</h2>
-                    <h1 class="henryCieza">Henry Cieza</h1>
-                    <h2 class="webDeveloper">Web Developer</h2>
-                </div> 
-                <div class="foto">
-                    <img class="fotoPersonal" src="/img/henry.jpg">
-                </div>
-               
-                
-            </div>   
-            <div class="enlace">
-                <a class="contacto" href="#">contacto</a>
-                <a class="download" href="#">download cv</a>
-                
-            </div>
+           <form action="contacto.php" method="POST" class="form-registrar" onsubmit="return validar();">
+                <h2>CONTACTO</h2>
+                <input type="text" id="nombre" name="nombre" placeholder="nombre"   required>
+                <input type="text" id="apellido" name="apellido" placeholder="apellido"   required>
+                <input type="email" id="correo" name="correo" placeholder="correo" required>
+                <textarea id="mensaje" name="mensaje" placeholder="escriba aqui su mensaje" required></textarea>
+                <input type="submit" id="btnEnviar" value="ENVIAR">
+
+
+
+           </form>
+
+
 
         </div>
         <div class="pie">
