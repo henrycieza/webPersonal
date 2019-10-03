@@ -57,9 +57,9 @@ a .logo-personal{
     font-size: 1.3em;
     justify-self: start;
 }
-/*.navlist{
+.navlist{
     display: block;
-}*/
+}
 /************* MENU  ******************/
 .cabecera label{
     
@@ -73,10 +73,12 @@ a .logo-personal{
     cursor: pointer;
 }
 .cabecera input{
+   display: none;
+}
+.cabecera label{
     display: none;
 }
-
-.navlist ul{
+.navlist .gridMenu{
     display:grid;
     grid-template-columns: repeat(4, 25%);
     justify-items: center;
@@ -86,13 +88,13 @@ a .logo-personal{
      padding: 0;
  }
  
- .navlist ul li {
+ .navlist .gridMenu li {
      cursor: pointer;
      padding: 1.3rem;
      flex: auto;
      text-align: center;
    }
-  .navlist ul li:hover {
+  .navlist .gridMenu li:hover {
      background-color: #fbb844;
      color: white;
      width: 100%;
