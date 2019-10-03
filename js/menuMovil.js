@@ -5,7 +5,7 @@ let eventMenu = document.querySelector("#btnMenu");
       if(this.checked){
             console.log("dentro del if");
             showMenu();
-            hideMenu();
+            
             
       }else{
             console.log("dentro del else");

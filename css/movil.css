@@ -12,7 +12,7 @@ root {
     display: none;
 }
 .cabecera .navlist{
-    /*display: none;*/
+   /* display: none;*/
 }
 .cabecera label{
   display: block !important;
@@ -30,7 +30,10 @@ root {
 #menuDisp {
   display: none;
   z-index: -100;
+  margin-right: 48px;
+  margin-top: -2px;
 }
+
 .menu {
   position: absolute;
   width: 250px;
@@ -42,7 +45,8 @@ root {
 }
 .gridMenu li {
   width: 100%;
-  margin: 10px 0px !important;
+  margin: 0px 0px !important;
+  border-top: .5px solid #fff;
 }
 .gridMenu a {
   display: block;
