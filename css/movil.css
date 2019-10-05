@@ -101,8 +101,12 @@ root {
     text-align: start;
     margin-left: 200px !important;
 }
-
+.slideshow-container {
+  width: 300px !important;
+  height: 400Px !important;
+  margin-top: 20px !important; 
   
+}
 }
 @media (min-width: 821px) {
   #menuDisp {
