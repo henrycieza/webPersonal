@@ -36,6 +36,7 @@ body{
     grid-template-columns: 30% 65% 5%;
     grid-template-rows:50px;
     justify-content: center;
+    align-content: center;
  
 }
 .logo{
@@ -49,7 +50,7 @@ body{
 a .logo-personal{
     height: 50px;
     width: 50px;  
-    margin: 10px 20px 0 40px; 
+    margin: 0 20px 0 40px; 
      
 }
 .logo .development{
@@ -62,6 +63,10 @@ a .logo-personal{
     display: block;
 }
 /************* MENU  ******************/
+.theme-switch{
+    margin-left: 20px;
+    margin-top: 20px;
+}
 .cabecera label{
     
     background-color: var(--cuerpo-bg-color);
@@ -82,8 +87,8 @@ a .logo-personal{
 .navlist .gridMenu{
     display:grid;
     grid-template-columns: repeat(4, 25%);
-    justify-items: center;
-    align-items: center;
+    /*justify-items: center;*/
+    /*align-items: center;*/
      list-style-type: none;
      margin: 0;
      padding: 0;
@@ -91,7 +96,7 @@ a .logo-personal{
  
  .navlist .gridMenu li {
      cursor: pointer;
-     padding: 1.3rem;
+     padding: 1rem;
      flex: auto;
      text-align: center;
    }
@@ -100,7 +105,10 @@ a .logo-personal{
      color: white;
      width: 100%;
   }   
- .navlist a{
+.gridMenu{
+       /* height: 60px;*/
+}
+   .navlist a{
      color:var(--texto-br-color);
      text-transform: uppercase;
      text-decoration: none;
@@ -115,10 +123,11 @@ a .logo-personal{
     flex-direction: row;
     align-items: center;
     height: 300px;
+
 }
 .datosPersonales .personalName{
     text-align: center;
-    width: 50%;
+    width: 100%;
 }
 .datosPersonales .foto{
     width: 50%;
@@ -128,8 +137,11 @@ a .logo-personal{
     height: 250px;
     /*efecto*/
     box-shadow: 18px 10px 13px -5px rgba(188,188,187,0.82);
-   
-   
+ }
+ .henryCieza{
+    font-family: 'Raleway', sans-serif;
+    color: #000000;
+    font-size: 2em;
 }
 .contenedor .enlace{
     display: flex;

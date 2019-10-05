@@ -12,25 +12,22 @@
   --font-color: #e1e1ff; /*COLOR DE LAS "P"*/
   --bg-color: #161625; /*FONDO DE BODY*/
 }
-.cabecera {
-  background-color: var(--secondary-color);
-}
 body {
-  background-color: var(--bg-color);
-  color: var(--font-color);
+  background-color: var(--bg-color) !important;
   font-size: calc(1rem + 0.25vh);
 }
 
 h1 {
   color: var(--heading-color); /*EJEMPLO*/
 }
-.navlist .gridMenu li{
-  background-color: var(--bg-color);
-}
+
 p {
   font-size: 1.1rem;
   line-height: 1.6rem;
   color: var(--font-color);
+}
+.cabecera{
+  background-color: var(--secondary-color);
 }
 
 .post-meta {
@@ -76,7 +73,7 @@ p {
   width: 26px;
 }
 input:checked + .slider {
-  background-color: #66bb6a;
+  background-color: #fbb844;
 }
 
 input:checked + .slider:before {

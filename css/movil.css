@@ -60,7 +60,7 @@ root {
 .datosPersonales{
     flex-direction: column !important;
     height: 200px !important;
-    margin-top: 50px;
+   
 }
 .enlace{
     margin-top: 80px;
@@ -82,7 +82,7 @@ root {
   }
   .gridMenu li {
     width: 100%;
-    margin: 10px 0px !important;
+    margin: 0px 0px !important;
   }
   .gridMenu a {
     display: block;
