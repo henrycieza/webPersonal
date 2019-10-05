@@ -3,7 +3,7 @@
   --secondary-color: #536390; /*TEXTO SEGUNDARIO*/
   --heading-color: #292922; /*TEXTO TERCERO*/
   --font-color:#9791A0; /*COLOR DE LAS "P"*/
-  --bg-color: #fff; /*FONDO DE BODY*/
+  --bg-color: #bcbcbb;/*FONDO DE BODY*/
 }
 [data-theme="dark"] {
   --primary-color: #9a97f3; /*TEXTO PRIMARIO*/
@@ -13,7 +13,7 @@
   --bg-color: #161625; /*FONDO DE BODY*/
 }
 body {
-  background-color: var(--bg-color) !important;
+  background-color: var(--bg-color);
   font-size: calc(1rem + 0.25vh);
 }
 
@@ -21,6 +21,9 @@ h1 {
   color: var(--heading-color); /*EJEMPLO*/
 }
 
+.personalName  h1{
+  color: var(--secondary-color) !important;
+}
 p {
   font-size: 1.1rem;
   line-height: 1.6rem;

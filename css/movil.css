@@ -72,7 +72,7 @@ root {
 .gridMenu{
     grid-template-columns: 1fr !important;
     text-align: center;
-    background:var(--logo-bg-color);
+    background:var(--cabecera-bg-color);
     margin: 0;
     width: 100%;
     top: 20px !important;
@@ -88,6 +88,20 @@ root {
     display: block;
     text-decoration: none;
   }
+  .personalName .imHC{
+    text-align: start !important;
+    margin-left: 100px !important;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 3em;
+    color:#bcbcbb;
+}
+.personalName .webDeveloper{
+    font-family: 'Big Shoulders Display', cursive;
+    color:#fbb844;
+    text-align: start;
+    margin-left: 200px !important;
+}
+
   
 }
 @media (min-width: 821px) {

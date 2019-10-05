@@ -4,7 +4,7 @@
     --cabecera-bg-color:#0d141c;
     --logo-bg-color:#fbb844;
     --cuerpo-bg-color:#ffffff;
-    --body-bg-color:#bcbcbb;
+    /*--body-bg-color:#bcbcbb;*/
     --texto-br-color:#ffffff;
   }
 *{
@@ -18,7 +18,7 @@
 }
 body{
   
-   background-color:var(--body-bg-color);
+  /* background-color:var(--body-bg-color);*/
     width: 80vw;
     margin:0 auto;
    
@@ -61,6 +61,19 @@ a .logo-personal{
 }
 .navlist{
     display: block;
+}
+.personalName .imHC{
+    text-align: start;
+    margin-left: 270px;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 3em;
+    color:#bcbcbb;
+}
+.personalName .webDeveloper{
+    font-family: 'Big Shoulders Display', cursive;
+    color:#fbb844;
+    text-align: start;
+    margin-left: 390px;
 }
 /************* MENU  ******************/
 .theme-switch{
