@@ -15,8 +15,9 @@
 
 .cardAboutMe{
     width: 60%;
-    background-color: red;
+   
 }
+
 .datosInfo{
     display: flex;
     flex-direction: row;

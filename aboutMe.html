@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/styleMain.css">
     <link rel="stylesheet" type="text/css" href="fonts/style.css">
     <link rel="stylesheet" type="text/css" href="css/aboutMe.css">
+    <link rel="stylesheet" type="text/css" href="css/animateprogress.css">
     <!--NOMBRE FONT STILE-->
     <link href="https://fonts.googleapis.com/css?family=Raleway:600i&display=swap" rel="stylesheet">
     <!--webDevelopment-->
@@ -15,6 +16,7 @@
     
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <title>PersonalWeb Henry Cieza</title>
+    
 </head>
 <body>
     <div class="contenedor">
@@ -65,30 +67,56 @@
                     <section class="section1">
                         <card class="card1">
                             <header>HABILIDADES DE PROGRAMACION</header>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti sequi voluptate quas harum ex incidunt. Asperiores, laboriosam magnam vitae dolore itaque reprehenderit laborum harum qui veniam aspernatur? Aperiam, repudiandae cupiditate.</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti sequi voluptate quas harum ex incidunt. Asperiores, laboriosam magnam vitae dolore itaque reprehenderit laborum harum qui veniam aspernatur? Aperiam, repudiandae cupiditate.</p>
+                            <div class="center">
+	 
+                                    <div class="progress">
+                                        <p>HTML5</p>
+                                        <progress id="html5" max="100" value="91"></progress>
+                                        <span></span>
+                                    </div>
+                                    
+                                    <div class="progress">
+                                    <p>PHP</p>
+                                        <progress id="php" max="100" value="72"></progress>
+                                       <span></span>
+                                    </div>
+                                    
+                                    <div class="clear"></div>
+                                    <div class="progress">
+                                    <p>CSS</p>
+                                        <progress id="css" max="100" value="86"></progress>
+                                        <span></span>
+                                    </div>
+                                
+                                    <div class="progress">
+                                    <p>Python</p>
+                                        <progress id="python" max="100" value="52"></progress>
+                                        <span></span>
+                                    </div>
+                                    <div class="clear"></div>
+                                        
+                                    <div class="progress">
+                                        <p>Javascript</p>
+                                        <progress id="javascript" max="100" value="79"></progress>
+                                        <span></span>
+                                    </div>
+                                    
+                                    <div class="progress">
+                                    <p>Node.js</p>
+                                        <progress id="nodejs" max="100" value="36"></progress>
+                                        <span></span>
+                                    </div>
+                                    <div>
+                                        <!--<input type="button" id="boton" value="Reload"/>-->
+                                        <input type="button" id="boton" value="Reload"/>
+                                    </div>    
+                                </div>
                         </card>
                     </section>    
-                    <section class="section2">
-                        <cardclass="card2">
-                                <header>HABILIDADES DE SOFTWARE</header>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti sequi voluptate quas harum ex incidunt. Asperiores, laboriosam magnam vitae dolore itaque reprehenderit laborum harum qui veniam aspernatur? Aperiam, repudiandae cupiditate.</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti sequi voluptate quas harum ex incidunt. Asperiores, laboriosam magnam vitae dolore itaque reprehenderit laborum harum qui veniam aspernatur? Aperiam, repudiandae cupiditate.</p>
-                        </card>
-                    </section>
+                    
 
 
                 </div>
-
-
-
-
-
-
-
-
-
-
 
 
            <!-----------------------------  FIN ABOUT ME --------------------------------------------->
@@ -112,8 +140,36 @@
             </div>
         </div>
     </div>
-   
+    
+    <script src="/js/darkLigth.js"></script>
     <script src="/js/menuMovil.js"></script>
     <script src="/js/darkLigth.js"></script>
+    <script src="/js/animateprogress.js"></script>
+   
+   <script type="text/javascript"> 
+
+        window.onload = function() { 
+            
+            animateprogress("#html5",91);
+            animateprogress("#php",72);
+            animateprogress("#css",86);
+            animateprogress("#python",52);
+            animateprogress("#javascript",79);
+            animateprogress("#nodejs",36);
+            
+        } 	
+        
+        document.querySelector ('#boton').addEventListener ('click', function() { 
+            animateprogress("#html5",91);
+            animateprogress("#php",72);
+            animateprogress("#css",86);
+            animateprogress("#python",52);
+            animateprogress("#javascript",79);
+            animateprogress("#nodejs",36);
+            
+        });
+    
+    
+    </script>
 </body>
 </html>
